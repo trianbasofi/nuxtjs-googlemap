@@ -48,7 +48,6 @@ export default {
   },
   data () {
     return {
-      map: null,
       address: null,
       latlng: null,
       watchId: null,
@@ -58,26 +57,9 @@ export default {
     }
   },
   mounted () {
-    // this.getLatLng()
     this.Watch()
   },
   methods: {
-    // async getLatLng () {
-    //   await this.$watchLocation({
-    //     enableHighAccuracy: true,
-    //     timeout: 5000,
-    //     maximumAge: 0
-    //   })
-    //     .then((coordinates) => {
-    //       console.log(coordinates)
-    //       this.coordinates = coordinates
-    //       this.latlng = coordinates.lat + ',' + coordinates.lng
-    //       this.getAddress(this.latlng)
-    //     })
-    //     .catch((error) => {
-    //       console.info(error)
-    //     })
-    // },
     Watch () {
       this.watchId = navigator.geolocation.watchPosition(
         (coordinates) => {
