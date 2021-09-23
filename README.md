@@ -1,4 +1,4 @@
-# nuxt-googlemap
+# Google Maps Embedded pada NuxtJS
 Memasang Google Map API pada project nuxtjs menggunakan vue-browser-geolocation dan vue2-google-maps serta custom marker menggunakan vue2-gmap-custom-marker.
 
 Configurasi awal :
